@@ -9,7 +9,7 @@
 
 ## 2. 說明
 
-給定一個琴聲譜、取樣率為48kHz、bit depth為16bits的音樂([連結](https://github.com/cychiang-ntpu/ntpu-ce-mmsp-2021/blob/master/Chapter-4/Ascience-Fast-Piano-Add-Tones.wav))，請撰寫一個 C 語言程式，將此音樂通過濾波器進行濾波，數學如下：
+給定一個琴聲譜、取樣率為 48kHz、bit depth 為 16bits 的音樂，請撰寫一個 C 語言程式，將此音樂通過濾波器進行濾波，數學如下：
 
 ![equation1](https://latex.codecogs.com/svg.latex?y_L%5Bn%5D%20%3D%20x_L%5Bn%5D%20*%20h_L%5Bn%5D) (1)
 
@@ -27,10 +27,7 @@ h<sub>L</sub>[n] 以及 h<sub>R</sub>[n] 都是長度為 2M + 1 的 causal FIR (
 
 ## 3. 規格
 
-### 3.1. 原始碼
-fir_xxxxxx.c，其中 xxxxxxxx 代表你的學號
-
-### 3.2. 程式使用方法
+### 3.1. 程式使用方法
 ```bash
 fir_xxxxxx M hL.txt hR.txt YL.txt YR.txt input.wav output.wav
 ```
@@ -43,7 +40,7 @@ fir_xxxxxx M hL.txt hR.txt YL.txt YR.txt input.wav output.wav
 - input.wav 是輸入的 48kHz、bit depth為16bits的音樂 wave file
 - output.wav 是經過 band-pass 和 band-stop 的 48kHz、bit depth為16bits的音樂 wave file
 
-### 3.3. 參數
+### 3.2. 參數
 請測試三種不同的 M：
 
 - M = 8
